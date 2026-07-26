@@ -14,6 +14,42 @@
     <h1>Smart <span class="mark">Budget</span> Planner</h1>
     <p>A notebook for your money — plan it, track it, save it.</p>
   </header>
-  </header>
+ <div class="layout">
+ <div class="card">
+  <h2>Monthly Details</h2>
+
+ <div class="field income-field">
+ <label for="income">Monthly Income</label>
+ <input type="number" id="income" placeholder="e.g.8000">
+ </div>
+
+ <div class="field">
+ <label for="rent">Rent/Hostel</label>
+ <input type="number" id="rent" placeholder="0">
+ </div>
+
+ <div class="field">
+ <label for="food">Food</label>
+ <input type="number" id="food" placeholder="0">
+ </div>
+
+ <div class="field">
+ <label for="transport">Transportation</label>
+ <input type="number" id="transport" placeholder="0">
+ </div>
+
+ <div class="field">
+ <label for="shopping">Shopping</label>
+ <input type="number" id="shopping" placeholder="0">
+ </div>
+
+ <div class="field">
+ <label for="other">Other Expenses</label>
+ <input type="number" id="other" placeholder="0">
+ </div>
+
+ <button id="calcBtn" onclick="calculatebudget()">Calculate</button>
+ </div>
+ 
 </body>
 </html>
