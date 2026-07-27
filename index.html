@@ -51,5 +51,45 @@
  <button id="calcBtn" onclick="calculatebudget()">Calculate</button>
  </div>
  
+<div class="card results">
+      <div class="spiral">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="card-inner">
+        <h2>Your Summary</h2>
+
+        <div class="stat-row">
+          <span class="label">Total Expenses</span>
+          <span class="value" id="totalExpenses">0</span>
+        </div>
+
+        <div class="stat-row">
+          <span class="label">Remaining Balance</span>
+          <span class="value" id="remainingBalance">0</span>
+        </div>
+
+        <div class="stat-row">
+          <span class="label">Saving Percentage</span>
+          <span class="value" id="savingPercent">0%</span>
+        </div>
+
+        <div id="statusBox">Fill in the form and press Calculate</div>
+
+        <div class="jar-wrap">
+          <div class="jar"><div id="jarFill"></div></div>
+          <div class="jar-label">savings jar</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>Frontend demo only — nothing is saved or sent anywhere.</footer>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
