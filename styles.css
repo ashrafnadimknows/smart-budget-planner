@@ -1,0 +1,53 @@
+  :root {
+    --paper: #F7F6F1;        
+    --line: #D8D3C4;          
+    --ink: #1D3557;          
+    --ink-soft: #5B6B8C;     
+    --highlighter: #FFD23F;  
+    --mint: #06A77D;      
+    --mint-soft: #E4F7F0;
+    --marker-red: #E63946;    
+    --marker-red-soft: #FDEAEB;
+    --card: #FFFFFF;
+    --radius: 16px;
+    --shadow: 0 8px 24px rgba(29, 53, 87, 0.08);
+  }
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    background-color: var(--paper);
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 28px 28px;
+    min-height: 100vh;
+    padding: 32px 16px 64px;
+  }
+  .page {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(28px, 5vw, 42px);
+    margin: 0 0 8px;
+  }
+  header p {
+    color: var(--ink-soft);
+    font-size: 16px;
+    margin: 0;
+  }
+  header .mark {
+    background: linear-gradient(120deg, var(--highlighter) 0%, var(--highlighter) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    background-position: 0 70%;
+    padding: 0 4px;
+  }
