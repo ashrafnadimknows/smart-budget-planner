@@ -73,3 +73,105 @@
     margin: 0 0 20px;
   }
 
+  .field { 
+    margin-bottom: 16px; 
+  } 
+ 
+  .field label { 
+    display: flex; 
+    justify-content: space-between; 
+    font-size: 14px; 
+    font-weight: 500; 
+    color: var(--ink-soft); 
+    margin-bottom: 6px; 
+  } 
+ 
+  .field input { 
+    width: 100%; 
+    font-family: 'JetBrains Mono', monospace; 
+    font-size: 16px; 
+    padding: 12px 14px; 
+    border: 2px solid var(--line); 
+    border-radius: 10px; 
+    background: var(--paper); 
+    color: var(--ink); 
+    outline: none; 
+    transition: border-color 0.15s ease; 
+  } 
+ 
+  .field input:focus { 
+    border-color: var(--ink); 
+  } 
+ 
+  .income-field input { 
+    border-color: var(--mint); 
+    background: var(--mint-soft); 
+  } 
+ 
+  #calcBtn { 
+    width: 100%; 
+    margin-top: 6px; 
+    padding: 14px; 
+    font-family: 'Space Grotesk', sans-serif; 
+    font-size: 16px; 
+    font-weight: 600; 
+    color: #fff; 
+    background: var(--ink); 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: transform 0.1s ease, background 0.15s ease; 
+  } 
+ 
+  #calcBtn:hover { background: #142544; } 
+  #calcBtn:active { transform: scale(0.98); } 
+ 
+  .results { 
+    position: relative; 
+    overflow: hidden; 
+  } 
+ 
+  .spiral { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    height: 20px; 
+    display: flex; 
+    justify-content: space-evenly; 
+  } 
+ 
+  .spiral span { 
+    width: 10px; 
+    height: 10px; 
+    margin-top: -5px; 
+    border-radius: 50%; 
+    background: var(--paper); 
+    border: 2px solid var(--line); 
+  } 
+ 
+  .results .card-inner { 
+    margin-top: 14px; 
+  } 
+ 
+  .stat-row { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: baseline; 
+    padding: 12px 0; 
+    border-bottom: 1px dashed var(--line); 
+  } 
+ 
+  .stat-row:last-of-type { border-bottom: none; } 
+ 
+  .stat-row .label { 
+    font-size: 14px; 
+    color: var(--ink-soft); 
+  } 
+ 
+  .stat-row .value { 
+    font-family: 'JetBrains Mono', monospace; 
+    font-size: 20px; 
+    font-weight: 700; 
+  } 
+ 
