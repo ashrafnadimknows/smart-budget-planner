@@ -175,3 +175,86 @@
     font-weight: 700; 
   } 
  
+  #statusBox { 
+    margin-top: 18px; 
+    padding: 16px; 
+    border-radius: 10px; 
+    text-align: center; 
+    font-family: 'Space Grotesk', sans-serif; 
+    font-weight: 600; 
+    font-size: 15px; 
+    background: var(--paper); 
+    color: var(--ink-soft); 
+    border: 2px dashed var(--line); 
+  } 
+ 
+  .status-good { 
+    background: var(--mint-soft) !important; 
+    color: #04664C !important; 
+    border: 2px solid var(--mint) !important; 
+  } 
+ 
+  .status-okay { 
+    background: #FFF7DD !important; 
+    color: #8A6D00 !important; 
+    border: 2px solid var(--highlighter) !important; 
+  } 
+ 
+  .status-bad { 
+    background: var(--marker-red-soft) !important; 
+    color: #A11F2A !important; 
+    border: 2px solid var(--marker-red) !important; 
+  } 
+
+  .jar-wrap { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 22px; 
+  } 
+ 
+  .jar { 
+    width: 88px; 
+    height: 110px; 
+    border: 4px solid var(--ink); 
+    border-top: none; 
+    border-radius: 0 0 14px 14px; 
+    position: relative; 
+    overflow: hidden; 
+    background: var(--paper); 
+  } 
+ 
+  .jar::before { 
+    content: ""; 
+    position: absolute; 
+    top: -10px; 
+    left: -6px; 
+    right: -6px; 
+    height: 10px; 
+    background: var(--ink); 
+    border-radius: 4px; 
+  } 
+ 
+  #jarFill { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    height: 0%; 
+    background: var(--mint); 
+    transition: height 0.5s ease; 
+  } 
+ 
+  .jar-label { 
+    margin-top: 10px; 
+    font-family: 'JetBrains Mono', monospace; 
+    font-size: 13px; 
+    color: var(--ink-soft); 
+  } 
+ 
+  footer { 
+    text-align: center; 
+    margin-top: 36px; 
+    font-size: 13px; 
+    color: var(--ink-soft); 
+  }
