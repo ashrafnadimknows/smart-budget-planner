@@ -9,3 +9,10 @@
     let remainingBalance = income - totalExpenses;
     let savingPercent = 0;
     
+    if (income > 0) {
+      savingPercent = (remainingBalance / income) * 100;
+    }
+    document.getElementById("totalExpenses").innerText = totalExpenses;
+    document.getElementById("remainingBalance").innerText = remainingBalance;
+    document.getElementById("savingPercent").innerText = savingPercent.toFixed(1) + "%";
+
